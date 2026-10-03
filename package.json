@@ -1,0 +1,23 @@
+{
+  "name": "segmented-prime-range",
+  "version": "1.0.0",
+  "description": "Windows 本地区间素数分段筛选与合数剔除解释后端",
+  "type": "module",
+  "main": "dist/src/server.js",
+  "bin": {
+    "prime-range": "dist/src/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/test/sieve.test.js",
+    "start": "node dist/src/server.js",
+    "demo": "node dist/src/cli.js demo"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.0",
+    "typescript": "^5.9.0"
+  }
+}
