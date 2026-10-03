@@ -1,0 +1,17 @@
+{
+  "name": "segmented-sieve-service",
+  "version": "1.0.0",
+  "private": true,
+  "description": "区间素数分段筛选与合数剔除解释后端",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node dist/test/run-tests.js",
+    "start": "npm run build && node dist/src/cli.js serve",
+    "cli": "node dist/src/cli.js",
+    "demo": "npm run build && node dist/src/cli.js demo"
+  },
+  "devDependencies": {
+    "@types/node": "*",
+    "typescript": "*"
+  }
+}
